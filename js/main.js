@@ -23,7 +23,7 @@ baseFetch()
 
   function runFetch(){
       let inputVal = document.querySelector('input').value.toLowerCase();
-      if (inputVal === 'america'){inputVal= 'United States'}
+      if (inputVal === 'america' || inputVal === 'us' || inputVal === 'usa' ){inputVal= 'United States'}
       let url = 'https://api.covid19api.com/total/dayone/country/' + inputVal;
       document.querySelector('h2').innerText = inputVal[0].toUpperCase() + inputVal.substring(1)
     
