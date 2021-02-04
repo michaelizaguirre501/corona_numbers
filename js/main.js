@@ -19,6 +19,15 @@ function baseFetch(){
         });
   }
 baseFetch()
+
+
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+document.getElementById("input")
+.addEventListener("keyup", function(e) {
+  if (e.keyCode === 13) {
+    document.querySelector("button").click();
+  }
+});
   document.querySelector('button').addEventListener('click', runFetch)
 
   function runFetch(){
